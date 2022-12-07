@@ -17,3 +17,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+
+keycloak:
+  realm: st_realm
+  auth-server-url: http://keycloak_dev:8080/auth
+  resource: customer-service
+  bearer-only: true
+  public-client: true
